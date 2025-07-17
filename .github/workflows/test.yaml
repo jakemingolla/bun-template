@@ -1,0 +1,24 @@
+name: 🧪 Test Coverage
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Checkout Repo
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      - name: 🥯 Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: ".bun-version"
+
+      - name: 📦 Install Dependencies
+        run: bun install
+
+      - name: 🧪 Run Tests
+        run: bun test --coverage
