@@ -2,7 +2,7 @@ name: 🧪 Test Coverage
 on: pull_request
 
 jobs:
-  integration:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: 🏗 Checkout Repo
@@ -20,5 +20,5 @@ jobs:
       - name: 📦 Install Dependencies
         run: bun install
 
-      - name: 🧪 Run Test Coverage
+      - name: 🧪 Run Tests
         run: bun test --coverage
