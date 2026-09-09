@@ -2,6 +2,10 @@
   "name": "rummikub-optimizer",
   "module": "src/index.ts",
   "type": "module",
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "bun": "1.4.2"
+  },
   "scripts": {
     "start": "bun run src/index.ts",
     "test": "bun test",
@@ -9,7 +13,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10",
-    "@types/bun": "latest",
+    "@types/bun": "1.4.2",
     "eslint": "^10.10.0",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17",
