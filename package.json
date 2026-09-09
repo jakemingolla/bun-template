@@ -1,5 +1,5 @@
 {
-  "name": "rummikub-optimizer",
+  "name": "bun-template",
   "module": "src/index.ts",
   "type": "module",
   "packageManager": "bun@1.4.2",

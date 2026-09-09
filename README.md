@@ -1,19 +1,41 @@
 # bun-template
 
-Prerequisites:
+A Bun-only HTTP service template using `Bun.serve()`.
 
-- [`bun`](https://bun.com/)
+## Prerequisites
 
-To install dependencies:
+- [Bun](https://bun.com/) (see `.bun-version`)
+
+## Install
 
 ```bash
 bun install
 ```
 
-To run:
+Copy `.env.example` to `.env` and adjust as needed. Bun loads `.env` automatically.
+
+## Run
 
 ```bash
 bun run start
 ```
 
-This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+The server listens on `PORT` (default `3000`) and `HOSTNAME` (default `0.0.0.0`).
+
+- `GET /` — service metadata
+- `GET /health` — health check
+
+Logs are JSON on stdout. `SIGTERM` / `SIGINT` stop the server and exit cleanly.
+
+## Test
+
+```bash
+bun test
+```
+
+## Docker
+
+```bash
+docker build -t bun-template .
+docker run --rm -p 3000:3000 bun-template
+```

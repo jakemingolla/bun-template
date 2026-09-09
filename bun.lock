@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "rummikub-optimizer",
+      "name": "bun-template",
       "devDependencies": {
         "@eslint/js": "^10",
         "@types/bun": "1.4.2",
