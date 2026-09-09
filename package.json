@@ -9,7 +9,8 @@
   "scripts": {
     "start": "bun run src/index.ts",
     "test": "bun test",
-    "lint": "eslint . "
+    "lint": "eslint . ",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@eslint/js": "^10",
@@ -18,6 +19,7 @@
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17",
     "prettier": "3.9.6",
+    "typescript": "5.9.3",
     "typescript-eslint": "^8.70.0"
   },
   "peerDependencies": {
